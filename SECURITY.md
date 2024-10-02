@@ -1,4 +1,3 @@
-# Security Policy
 
 There MUST be no unpatched vulnerabilities of medium or higher severity that have been publicly known for more than 60 days. 
 

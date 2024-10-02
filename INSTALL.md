@@ -1,3 +1,8 @@
 # Installation instructions
 
-Detailed instructions on how to install, configure, and get the project running.
+To view the notebooks, you can run:
+
+`docker compose up`
+
+To then run the code using IaC refer to `terraform/` folder.
+

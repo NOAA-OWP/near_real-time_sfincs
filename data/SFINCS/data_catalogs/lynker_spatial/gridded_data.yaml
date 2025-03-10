@@ -1,0 +1,50 @@
+---
+meta:
+  version: 0.0.1
+  name: lynker_data
+  category: topography
+
+USGS_seamless_13:
+  crs: 4269
+  data_type: RasterDataset
+  driver: raster
+  driver_kwargs:
+    chunks:
+      x: 3600
+      y: 3600
+  meta:
+    category: topography
+    source_license: https://lynker-spatial.s3-us-west-2.amazonaws.com/copyright.html
+    source_url: lynker-spatial.com
+    source_spatial_extent:
+    West: -124.7
+    South: 24.5
+    East: -66.5
+    North: 49.5
+  version: 1.0
+  path:  s3://lynker-spatial/gridded-resources/USGS_seamless_13.vrt
+  rename:
+    USGS_seamless_13: elevtn
+    
+dem:
+  crs: 5070
+  data_type: RasterDataset
+  driver: raster
+  driver_kwargs:
+    chunks:
+      x: 3600
+      y: 3600
+  meta:
+    category: topography
+    source_license: https://lynker-spatial.s3-us-west-2.amazonaws.com/copyright.html
+    source_url: lynker-spatial.com
+    source_spatial_extent:
+    West: -124.7
+    South: 24.5
+    East: -66.5
+    North: 49.5
+  version: 1.0
+  path:  s3://lynker-spatial/gridded-resources/dem.vrt
+  rename:
+    dem: elevtn
+

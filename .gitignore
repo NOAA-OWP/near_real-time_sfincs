@@ -36,6 +36,7 @@ _site/
 Icon?
 ehthumbs.db
 Thumbs.db
+notebooks/.ipynb_checkpoints/
 
 # Vim swap files #
 ##################

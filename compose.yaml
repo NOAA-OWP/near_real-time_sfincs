@@ -11,9 +11,6 @@ services:
         source: ./data
         target: /app/data
       - /var/run/docker.sock:/var/run/docker.sock 
-    environment:
-      - PIKA_URL=rabbitmq
-      - RABBITMQ_HOST=rabbitmq
     ports:
       - "8888:8888"
     command: jupyter-lab --NotebookApp.token='' --allow-root
@@ -60,11 +57,6 @@ services:
     environment:
       - PIKA_URL=rabbitmq
       - RABBITMQ_HOST=rabbitmq
-      - SQLALCHEMY_DATABASE_URL=postgresql://{}:{}@{}/{}
-      - DB_HOST=mock_db
-      - REDIS_URL=redis
-      - SUBSET_URL=http://hfsubset:8000/api/v1
-      - TROUTE_URL=http://troute:8000/api/v1
     command: sh -c ". /app/.venv/bin/activate && python src/rise/app/consumer_manager.py"
     depends_on:
       rabbitmq:

@@ -264,7 +264,7 @@ scipy==1.14.1
     #   hydromt
     #   hydromt-sfincs
     #   pyflwdir
-setuptools==75.1.0
+setuptools==78.1.1
     # via rasterio
 shapely==2.0.6
     # via
